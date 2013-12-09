@@ -1,0 +1,80 @@
+<BOUCLE_principale(ARTICLES) {id_article}>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+[(#REM) Cf.: http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+]<!--[if lt IE 7 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html dir="#LANG_DIR" lang="#LANG" xmlns="http://www.w3.org/1999/xhtml" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js"> <!--<![endif]-->
+<head>
+<script type='text/javascript'>/*<![CDATA[*/(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);/*]]>*/</script>
+<title>[(#NOM_SITE_SPIP|textebrut)][ - (#SLOGAN_SITE_SPIP|textebrut)]</title>
+[<meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{150}|textebrut)" />]
+<INCLURE{fond=inclure/head} />
+</head>
+
+<body class="secteur#ID_SECTEUR">
+<div class="page_content">
+
+        <INCLURE{fond=inclure/header}{home=oui} />
+        
+<div class="block_content">
+    <div id="main">
+        <div class="mcontent transbg">
+
+		[(#REM) Contenu principal : contenu de l'article ]
+	
+			<div class="cartouche">
+                <p class="arbo"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><BOUCLE_ariane(HIERARCHIE){id_article}> &gt; <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a></BOUCLE_ariane>[ &gt; <strong class="on">(#TITRE|couper{80})</strong>]</p>
+				[<p class="#EDIT{surtitre} surtitre">(#SURTITRE)</p>]
+				<h1 class="#EDIT{titre} surlignable">[(#LOGO_ARTICLE_RUBRIQUE|image_reduire{40,*}) ]#TITRE</h1>
+				[<p class="#EDIT{soustitre} soustitre">(#SOUSTITRE)</p>]
+			</div>
+			
+			[<div class="#EDIT{chapo} chapo surlignable">(#CHAPO|image_reduire{500,*})</div>]
+			[<div class="#EDIT{texte} texte surlignable clearfix">(#TEXTE|image_reduire{500,*})</div>]
+		
+			[<hr /><p class="#EDIT{hyperlien} hyperlien"><:voir_en_ligne:> : <a href="(#URL_SITE)">[(#NOM_SITE|sinon{[(#URL_SITE|couper{80})]})]</a></p>]
+			[<div class="#EDIT{ps} ps surlignable"><hr />(#PS|image_reduire{500,*})</div>]
+		
+			[(#REM) Gestion du portfolio et des documents ]
+			[(#INCLURE{fond=inclure/documents,id_article, env})]
+	
+			[<div class="notes"><hr />(#NOTES)</div>]
+			
+        </div><!--mcontent-->
+
+        <div class="aside transbg">
+		
+			<INCLURE{fond=inclure/navsub, id_rubrique} />
+			#FORMULAIRE_RECHERCHE
+	
+			[(#REM) Articles dans la meme rubrique ]
+			<B_articles_rubrique>
+			<div class="menu">
+				<h2><:meme_rubrique:></h2>
+				<ul>
+					<BOUCLE_articles_rubrique(ARTICLES) {id_rubrique} {!par date} {0,10}>
+					<li><a href="#URL_ARTICLE"[ class="(#EXPOSE)"]>#TITRE</a></li>
+					</BOUCLE_articles_rubrique>
+				</ul>
+			</div>
+			</B_articles_rubrique>
+	
+			[(#REM) Menu de navigation mots-cles ]
+			#MODELE{article_mots}
+			
+        </div><!-- aside -->
+    </div><!-- main -->
+    <div style="clear: both"></div>
+</div><!-- .bloc_content -->
+
+        
+        <INCLURE{fond=inclure/footer,self=#SELF} />
+        
+</div><!--.page_content-->
+</body>
+</html>
+
+</BOUCLE_principale>

@@ -7,6 +7,7 @@ body {
     font: 1em/1.5em 'Open Sans',sans-serif,Georgia,Cambria,Times New Roman,Times,serif;
     background-size: cover;
     background-color: white;
+    background-attachment: fixed;
 }
 
 .transbg {
@@ -137,4 +138,26 @@ body {
 
 #footer_content > ul > li > span {
     font-weight: bold;
+}
+
+
+/*
+// Article
+*/
+
+body.secteur2 #main .cartouche {
+    background-color: #7e1713;
+}
+body.secteur3 #main .cartouche {
+    background-color: #ff5000;
+}
+body.secteur4 #main .cartouche {
+    background-color: #ff8a00;
+}
+body.secteur5 #main .cartouche {
+    background-color: #2999d9;
+}
+
+#main .cartouche {
+    padding: 0.8em;
 }
