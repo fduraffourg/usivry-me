@@ -1,0 +1,140 @@
+/*
+// Generic
+*/
+
+body {
+    color: white;
+    font: 1em/1.5em 'Open Sans',sans-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    background-size: cover;
+    background-color: white;
+}
+
+.transbg {
+    background-color: black;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.fg_section {
+    color: #7e1713;
+}
+.fg_alpinisme {
+    color: #ff8a00;;
+}
+.fg_escalade {
+    color: #ff5000;
+}
+.fg_randonnee {
+    color: #aeae00;
+}
+.fg_skirando {
+    color: #2999d9;
+}
+
+
+.bg_section {
+    background-color: #7e1713;
+}
+.bg_alpinisme {
+    background-color: #ff8a00;
+}
+.bg_escalade {
+    background-color: #ff5000;
+}
+.bg_randonnee {
+    background-color: #aeae00;
+}
+.bg_skirando {
+    background-color: #2999d9;
+}
+
+
+/*
+// Header
+*/
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+.header a:hover {
+    text-decoration: underline;
+}
+.header a:active {
+    outline: none;
+}
+
+#logo {
+    background-color: white;
+}
+
+#slogan {
+    font-size: 1.5em;
+    color: #a00000;
+    font-style: italic;
+    text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
+}
+#slogan > span {
+    color: white;
+}
+
+#activites .txt {
+    font-weight: bold;
+}
+#activites .act_alpinisme .txt {
+    background-color: #ff8a00;;
+}
+#activites .act_escalade .txt {
+    background-color: #ff5000;
+}
+#activites .act_randonnee .txt {
+    background-color: #aeae00;
+}
+#activites .act_skirando .txt {
+    background-color: #2999d9;
+}
+
+#permaliens a {
+    font-size: 1.2em;
+}
+#permaliens input {
+    border: 1px solid black;
+    height: 1.5em;
+}
+#permaliens input[type=submit] {
+    background-color: black;
+    color: white;
+}
+
+/*
+// Main
+*/
+
+
+/* Aside */
+
+.aside .calendrier h1 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin: 0.6em 0px 0.3em 0px;
+}
+.aside .calendrier ul {
+    padding-left: 1em;
+}
+.aside .calendrier li {
+}
+.aside .calendrier span {
+    font-weight: bold;
+}
+
+/*
+// Footer
+*/
+
+#footer .border_top,
+#footer .border_bottom {
+    background-color: black;
+}
+
+#footer_content > ul > li > span {
+    font-weight: bold;
+}

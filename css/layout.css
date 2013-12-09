@@ -1,0 +1,158 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+}
+
+.page_content {
+    margin: 0px auto;
+    width: 900px;
+}
+
+.block_content {
+    position: relative;
+}
+
+
+/*
+// Generic
+*/
+
+.tableul {
+    display: table;
+    width: 100%;
+}
+
+.tableul > ul {
+    display: table-row;
+    list-style: none;
+}
+
+.tableul > ul > li {
+    display: table-cell;
+}
+
+/* 
+// Header
+*/
+
+.header {
+    padding: 10px 0px 40px 0px;
+}
+
+#logo {
+    width: 160px;
+    height: 180px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+#header_right {
+    float: right;
+    overflow: hidden;
+    width: 730px;
+}
+
+#slogan {
+    text-align: right;
+    margin: 1.2em;
+}
+
+
+#activites {
+    padding: 0px 0px 0px 20px;
+}
+
+#activites ul {
+}
+
+#activites ul li {
+    width: 25%;
+}
+
+#activites ul li .txt {
+    width: 100px;
+    text-align: center;
+}
+
+#activites ul li .img {
+    width: 100px;
+    height: 39px;
+}
+
+
+
+#permaliens {
+}
+
+#permaliens li {
+    padding: 0.4em 1em 0.4em 1em;
+}
+
+
+/*
+// Main
+*/
+
+#main {
+    padding: 0.8em 0px;
+}
+
+#main .mcontent {
+    clear: both;
+    float: left;
+    width: 610px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+#main .bloc_accueil {
+    width: 302px;
+    display: inline-block;
+}
+
+#main .aside {
+    float: right;
+    width: 240px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+/*
+// Footer
+*/
+
+#footer {
+    margin-top: 30px;
+}
+
+#footer .border_top {
+    height: 20px;
+}
+
+#footer_content {
+    padding: 1em 0px 2em 0px;
+}
+
+#footer_content > ul > li {
+    width: 20%;
+    padding-left: 10px;
+}
+
+#footer_content > ul > li > ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+#footer_content > ul > li > ul {
+}
+
+#footer .border_bottom {
+    padding: 4px;
+    text-align: center;
+}
