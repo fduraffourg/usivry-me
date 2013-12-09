@@ -20,30 +20,10 @@
 <div class="block_content">
     <div id="main">
         <div class="mcontent transbg">
-            
-            <div class="bloc_accueil bg_escalade">
-                Chagriné de ne pas être armé chevalier, Don Quichotte demande à l'aubergiste, qu'il prend pour un chât
-elain, de lui faire cette faveur. Après l'accord de l'aubergiste, Don Quichotte se retrouve, comme le veux les règles 
-de la chevalerie, à monter la garde des armes, or ces dernières se trouvent posées contre un abreuvoir dont l'eau est 
-nécessaire à deux muletiers qui se font frappés par le chevalier, croyant leurs intentions mauvaises car il les prends
- pour d'autres chevaliers. L'aubergiste, pour éviter d'autres mésaventures, fait armer aussitôt Don Quichotte.
-            </div>
 
-            <div class="bloc_accueil bg_skirando">
-Une bataille aérienne se déroule au dessus de l’île. Juste avant d’exposer, un avion éjecte son pilote mort, qui vient
- s’écraser sur le sommet de la montagne. De garde pour le feu, les jumeaux aperçoivent le cadavre qui par l’intermédia
-ire de son parachute, est relevé à chaque coup de vent. Ils croient voir un monstre et se précipitent pour réveiller l
-es autres enfants. Ceux ci décident d’inspecter le seul endroit de l’île qu’ils ne connaissent pas pour trouver le mon
-stre. Ils s’y rendent donc le lendemmain et découvre un lieu pouvant faire office de forteresse.
-Ombres furtives et grandes futaies
-            </div>
-
-            <div class="bloc_accueil bg_randonnee">
-Piggy, qui ne voit plus rien, veut récupérer ses lunettes. Accompagné de Ralph et des jumeaux, il se dirige vers la fo
-rteresse de Jack. Là bas, c’est Ralph qui commence à s’expliquer avec Jack, mais le discours tourne en bataille. Jack 
-et Ralph se battent, les deux jumeaux sont capturés tandis que certains membres de la tribu font rouler un gros rocher
- qui vient frapper Piggy, le projète 15 mètres plus bas sur une dalle de pierre, provoquant sa mort.
-            </div>
+         <BOUCLE_actualites(ARTICLES){id_article=1}>
+            #TEXTE
+         </BOUCLE_actualites>
 
         </div><!--mcontent-->
 
@@ -58,15 +38,11 @@ et Ralph se battent, les deux jumeaux sont capturés tandis que certains membres
                         <li><span class="fg_escalade">Grimpe au mur</span>
                     </ul>
                 <h1>A venir</h1>
-                    <ul>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                        <li><span class="fg_skirando">Ski de rando</span></li>
-                    </ul>
+
+                 <BOUCLE_calendrier(ARTICLES){id_article=2}>
+                    #TEXTE
+                 </BOUCLE_calendrier>
+
             </div><!-- calendrier -->
         </div><!-- aside -->
     </div><!-- main -->
