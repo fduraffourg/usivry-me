@@ -21,10 +21,6 @@ body {
     background: url("img/act_escalade.jpg");
 }
 
-#activites .act_randonnee .img {
-    background: url("img/act_randonnee.jpg");
-}
-
 #activites .act_skirando .img {
-    background: url("img/act_skirando.jpg");
+    background: url("img/act_hiver.jpg");
 }

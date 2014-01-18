@@ -58,7 +58,7 @@ body {
 #header_right {
     float: right;
     overflow: hidden;
-    width: 730px;
+    width: 770px;
 }
 
 #slogan {
@@ -68,7 +68,6 @@ body {
 
 
 #activites {
-    padding: 0px 0px 10px 20px;
 }
 
 #activites ul {
@@ -81,11 +80,13 @@ body {
 #activites ul li .txt {
     width: 100px;
     text-align: center;
+    margin: auto;
 }
 
 #activites ul li .img {
     width: 100px;
     height: 39px;
+    margin: auto;
 }
 
 

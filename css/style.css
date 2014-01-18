@@ -12,7 +12,7 @@ body {
 
 .transbg {
     background-color: black;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
 }
 
 .fg_section {
@@ -76,12 +76,29 @@ body {
     font-weight: bold;
 }
 
+#permaliens li {
+    border-left: 2px solid white;
+}
+#permaliens li:first-child { border-left: 0px; }
+
 #permaliens a {
     font-size: 1.2em;
 }
+#permaliens a:hover {
+    color: #b21a17;
+    text-decoration: none;
+}
+
+#permaliens .recherche {
+    text-align: right;
+}
+
 #permaliens input {
     border: 1px solid black;
     height: 1.5em;
+}
+#permaliens input[type=text] {
+    width: 150px;
 }
 #permaliens input[type=submit] {
     background-color: black;
@@ -121,19 +138,28 @@ body.secteur5 .cartouche {
 }
 
 
-body.secteur2 #main h3 {
+body.secteur2 #main h3,
+body.secteur2 #main .to_top {
     color: #7e1713;
 }
-body.secteur3 #main h3 {
+body.secteur3 #main h3,
+body.secteur3 #main .to_top {
     color: #ff5000;
 }
-body.secteur4 #main h3 {
+body.secteur4 #main h3,
+body.secteur4 #main .to_top {
     color: #aeae00;
 }
-body.secteur5 #main h3 {
+body.secteur5 #main h3,
+body.secteur5 #main .to_top {
     color: #2999d9;
 }
 
+
+#main .to_top {
+    float: right;
+    font-size: 1.5em;
+}
 
 /* Aside */
 
