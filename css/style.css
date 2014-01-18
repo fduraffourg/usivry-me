@@ -113,6 +113,14 @@ body {
 // Article
 */
 
+#main .arbo {
+    margin-bottom: 0.5em;
+    font-size: 0.8em;
+}
+
+body .cartouche {
+    background-color: black;
+}
 body.secteur2 .cartouche {
     background-color: #7e1713;
 }
@@ -193,7 +201,7 @@ body.secteur5 #main .to_top {
 #footer_content > ul > li > span {
     font-weight: bold;
     text-transform: uppercase;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
     text-align: center;
 }
 
