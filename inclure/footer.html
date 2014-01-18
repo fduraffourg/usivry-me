@@ -2,35 +2,54 @@
     <div class="border_top"></div>
     <div id="footer_content" class="tableul transbg">
         <ul>
-            <li><span class="fg_section">Section</span>
+            <li><span class="fg_section"><a href="/spip.php?rubrique2">Section</a></span>
                 <ul>
-                    <li>La section</li>
-                    <li>Infos pratiques</li>
+                <BOUCLE_rsection(RUBRIQUES){id_parent=2}>
+                   <li><b><a href="#URL_RUBRIQUE">#TITRE</a></b></li> 
+                </BOUCLE_rsection>
+                <BOUCLE_asection(ARTICLES){id_rubrique=2}>
+                   <li><a href="#URL_ARTICLE">#TITRE</a></li> 
+                </BOUCLE_asection>
                 </ul>
             </li>
 
-            <li><span class="fg_alpinisme">Alpinisme</span>
+            <li><span class="fg_alpinisme"><a href="/spip.php?rubrique4">Alpinisme</a></span>
+                <ul>
+                <BOUCLE_ralpinisme(RUBRIQUES){id_parent=4}>
+                   <li><b><a href="#URL_RUBRIQUE">#TITRE</a></b></li> 
+                </BOUCLE_ralpinisme>
+                <BOUCLE_aalpinisme(ARTICLES){id_rubrique=4}>
+                   <li><a href="#URL_ARTICLE">#TITRE</a></li> 
+                </BOUCLE_aalpinisme>
+                </ul>
+            </li>
+
+            <li><span class="fg_escalade"><a href="/spip.php?rubrique3">Escalade</a></span>
+                <ul>
+                <BOUCLE_rescalade(RUBRIQUES){id_parent=3}>
+                   <li><b><a href="#URL_RUBRIQUE">#TITRE</a></b></li> 
+                </BOUCLE_rescalade>
+                <BOUCLE_aescalade(ARTICLES){id_rubrique=3}>
+                   <li><a href="#URL_ARTICLE">#TITRE</a></li> 
+                </BOUCLE_aescalade>
+                </ul>
+            </li>
+
+            [(#REM)<li><span class="fg_randonnee"><a href="/spip.php?rubrique4">Randonnee</a></span>
                 <ul>
                     <li>La section</li>
                     <li>Infos pratiques</li>
                 </ul>
-            </li>
-            <li><span class="fg_escalade">Escalade</span>
+            </li>]
+
+            <li><span class="fg_hiver"><a href="/spip.php?rubrique5">Hiver</a></span>
                 <ul>
-                    <li>La section</li>
-                    <li>Infos pratiques</li>
-                </ul>
-            </li>
-            <li><span class="fg_randonnee">Randonnee</span>
-                <ul>
-                    <li>La section</li>
-                    <li>Infos pratiques</li>
-                </ul>
-            </li>
-            <li><span class="fg_skirando">Ski de randonnée</span>
-                <ul>
-                    <li>La section</li>
-                    <li>Infos pratiques</li>
+                <BOUCLE_rhiver(RUBRIQUES){id_parent=5}>
+                   <li><b><a href="#URL_RUBRIQUE">#TITRE</a></b></li> 
+                </BOUCLE_rhiver>
+                <BOUCLE_ahiver(ARTICLES){id_rubrique=5}>
+                   <li><a href="#URL_ARTICLE">#TITRE</a></li> 
+                </BOUCLE_ahiver>
                 </ul>
             </li>
         </ul>

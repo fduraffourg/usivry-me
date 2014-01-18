@@ -28,22 +28,7 @@
         </div><!--mcontent-->
 
         <div class="aside transbg">
-            <div class="calendrier">
-                <h1>Toute l'année</h1>
-                    <ul>
-                        <li><span class="fg_escalade">Tous les dimanches</span>
-                            Grimpe à Fontainebleau
-                            <img src="grimpe_fontainebleau.jpg"/>
-                        </li>
-                        <li><span class="fg_escalade">Grimpe au mur</span>
-                    </ul>
-                <h1>A venir</h1>
-
-                 <BOUCLE_calendrier(ARTICLES){id_article=2}>
-                    #TEXTE
-                 </BOUCLE_calendrier>
-
-            </div><!-- calendrier -->
+            <INCLURE{fond=inclure/navsub}/>
         </div><!-- aside -->
     </div><!-- main -->
     <div style="clear: both"></div>

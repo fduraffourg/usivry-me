@@ -63,12 +63,12 @@ body {
 
 #slogan {
     text-align: right;
-    margin: 1.2em;
+    margin: 1em;
 }
 
 
 #activites {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 10px 20px;
 }
 
 #activites ul {
@@ -141,16 +141,21 @@ body {
 }
 
 #footer_content {
-    padding: 1em 0px 2em 0px;
+    /* padding: 1em 0px 2em 0px; */
 }
 
 #footer_content > ul > li {
     width: 20%;
-    padding-left: 10px;
+}
+
+#footer_content > ul > li > span {
+    display: block;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 #footer_content > ul > li > ul {
-    padding-left: 20px;
+    padding: 0px 5px 0.5em 20px;
     list-style: disc;
 }
 

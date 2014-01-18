@@ -20,11 +20,12 @@ h6,.h6 { display: block; margin: 0; padding: 0; font-size: 100%; font-weight: no
 hr { height: 1px; margin: 1.5em 0; border: 0; background: #222222; color: #222222; }
 
 h1,.h1 { font-size: 2em; line-height: 1.5; margin-bottom: .75em; }
-h2,.h2 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
-h3,.h3 { font-size: 1.25em; line-height: 1.2; margin-bottom: 1.2em; }
+h2,.h2 { font-size: 1.75em; line-height: 1; margin-bottom: 1em; }
+h3,.h3 { font-size: 1.5em; line-height: 1.2; margin-bottom: 1.2em; }
 h4,.h4 { font-size: 1.1em; line-height: 1.364; margin-bottom: 1.364em; }
 h5,.h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
 h6,.h6 { font-size: 1em; font-weight: bold; }
+
 
 /* Enrichissements typographiques */
 strong, b { font-weight: bold; }
@@ -46,20 +47,25 @@ sub { vertical-align: sub; }
 /* Listes */
 ul, ol, li, dl, dt, dd {}
 ul ul, ol ol, ul ol, ol ul { margin-top: 0; margin-bottom: 0; }
+ul { padding-left: 1em; }
 
 dl dt { font-weight: bold; }
 dl dd {}
 
 /* Tableaux */
 table {}
-caption { background: #EEE; }
+caption { background: #0000; font-weight: bold; }
 th { font-weight: bold; }
-thead th { background: #DDD; }
+thead th { background: #000; }
 th,td,caption { padding: 0.75em; }
 tbody tr:nth-child(even) th,
 tbody tr:nth-child(even) td,
 tbody tr.even th,
-tbody tr.even td { background: #EEE; }
+tbody tr.even td { background: #222; }
+tbody tr:nth-child(odd) th,
+tbody tr:nth-child(odd) td,
+tbody tr.odd th,
+tbody tr.odd td { background: #111; }
 tfoot { font-style: italic; }
 
 /* Citations, code et poesie */
@@ -89,7 +95,7 @@ var { font-style: italic; }
 p, .p, dl, dd, blockquote, address, pre, table, fieldset { margin-bottom: 1.5em; }
 
 /* Liens */
-a { color: white; }
+a { color: inherit; }
 a:hover {}
 a[hreflang]:after { content: "\0000a0(" attr(hreflang) ")"; }
 @media print {
@@ -135,16 +141,3 @@ a[hreflang]:after { content: "\0000a0(" attr(hreflang) ")"; }
   body { -webkit-text-size-adjust: 70%; }
 }
 
-/*
-
-    ATTENTION
-    L'usage de proprietes -webkit-* sans leurs contreparties
-    (-o-*, -moz-*, etc.) est fortement deconseille !
-    cf. http://www.webstandards.org/2012/02/09/call-for-action-on-vendor-prefixes/
-
-    Prenez le temps de corriger s'il vous plait : les proprietes CSS prefixees ne sont en theorie
-    destinees qu'a des fins de test.
-
-*/
-
-/* end */

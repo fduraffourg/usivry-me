@@ -19,7 +19,8 @@ body {
     color: #7e1713;
 }
 .fg_alpinisme {
-    color: #ff8a00;;
+    /*color: #ff8a00;*/
+    color: #aeae00;
 }
 .fg_escalade {
     color: #ff5000;
@@ -27,7 +28,7 @@ body {
 .fg_randonnee {
     color: #aeae00;
 }
-.fg_skirando {
+.fg_hiver {
     color: #2999d9;
 }
 
@@ -36,15 +37,12 @@ body {
     background-color: #7e1713;
 }
 .bg_alpinisme {
-    background-color: #ff8a00;
+    background-color: #aeae00;
 }
 .bg_escalade {
     background-color: #ff5000;
 }
-.bg_randonnee {
-    background-color: #aeae00;
-}
-.bg_skirando {
+.bg_hiver {
     background-color: #2999d9;
 }
 
@@ -81,18 +79,6 @@ body {
 #activites .txt {
     font-weight: bold;
 }
-#activites .act_alpinisme .txt {
-    background-color: #ff8a00;;
-}
-#activites .act_escalade .txt {
-    background-color: #ff5000;
-}
-#activites .act_randonnee .txt {
-    background-color: #aeae00;
-}
-#activites .act_skirando .txt {
-    background-color: #2999d9;
-}
 
 #permaliens a {
     font-size: 1.2em;
@@ -110,20 +96,65 @@ body {
 // Main
 */
 
+/*
+// Article
+*/
+
+body.secteur2 .cartouche {
+    background-color: #7e1713;
+}
+body.secteur3 .cartouche {
+    background-color: #ff5000;
+}
+body.secteur4 .cartouche {
+    background-color: #aeae00;
+}
+body.secteur5 .cartouche {
+    background-color: #2999d9;
+}
+
+.cartouche {
+    padding: 0.8em;
+    margin-bottom: 1.8em;
+}
+
+.cartouche h1 { margin: 0px; }
+
+#main .texte {
+    text-align: justify;
+}
+
+
+body.secteur2 #main h3 {
+    color: #7e1713;
+}
+body.secteur3 #main h3 {
+    color: #ff5000;
+}
+body.secteur4 #main h3 {
+    color: #aeae00;
+}
+body.secteur5 #main h3 {
+    color: #2999d9;
+}
+
 
 /* Aside */
 
-.aside .calendrier h1 {
+.aside { font-size: 0.9em; }
+.aside h3 {
     font-size: 1.4em;
     text-transform: uppercase;
+    text-align: center;
     margin: 0.6em 0px 0.3em 0px;
+    color: white;
 }
-.aside .calendrier ul {
+.aside ul {
     padding-left: 1em;
 }
-.aside .calendrier li {
+.aside li {
 }
-.aside .calendrier span {
+.aside span {
     font-weight: bold;
 }
 
@@ -131,6 +162,7 @@ body {
 // Footer
 */
 
+#footer { font-size: 0.8em; }
 #footer .border_top,
 #footer .border_bottom {
     background-color: black;
@@ -138,26 +170,16 @@ body {
 
 #footer_content > ul > li > span {
     font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+#footer a {
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
 }
 
 
-/*
-// Article
-*/
-
-body.secteur2 #main .cartouche {
-    background-color: #7e1713;
-}
-body.secteur3 #main .cartouche {
-    background-color: #ff5000;
-}
-body.secteur4 #main .cartouche {
-    background-color: #ff8a00;
-}
-body.secteur5 #main .cartouche {
-    background-color: #2999d9;
-}
-
-#main .cartouche {
-    padding: 0.8em;
-}

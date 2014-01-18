@@ -24,9 +24,9 @@
         <div class="mcontent transbg">
 
 		[(#REM) Contenu principal : contenu de l'article ]
+            <p class="arbo"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><BOUCLE_ariane(HIERARCHIE){id_article}> &gt; <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a></BOUCLE_ariane>[ &gt; <strong class="on">(#TITRE|couper{80})</strong>]</p>
 	
 			<div class="cartouche">
-                <p class="arbo"><a href="#URL_SITE_SPIP/"><:accueil_site:></a><BOUCLE_ariane(HIERARCHIE){id_article}> &gt; <a href="#URL_RUBRIQUE">[(#TITRE|couper{80})]</a></BOUCLE_ariane>[ &gt; <strong class="on">(#TITRE|couper{80})</strong>]</p>
 				[<p class="#EDIT{surtitre} surtitre">(#SURTITRE)</p>]
 				<h1 class="#EDIT{titre} surlignable">[(#LOGO_ARTICLE_RUBRIQUE|image_reduire{40,*}) ]#TITRE</h1>
 				[<p class="#EDIT{soustitre} soustitre">(#SOUSTITRE)</p>]
@@ -46,25 +46,7 @@
         </div><!--mcontent-->
 
         <div class="aside transbg">
-		
 			<INCLURE{fond=inclure/navsub, id_rubrique} />
-			#FORMULAIRE_RECHERCHE
-	
-			[(#REM) Articles dans la meme rubrique ]
-			<B_articles_rubrique>
-			<div class="menu">
-				<h2><:meme_rubrique:></h2>
-				<ul>
-					<BOUCLE_articles_rubrique(ARTICLES) {id_rubrique} {!par date} {0,10}>
-					<li><a href="#URL_ARTICLE"[ class="(#EXPOSE)"]>#TITRE</a></li>
-					</BOUCLE_articles_rubrique>
-				</ul>
-			</div>
-			</B_articles_rubrique>
-	
-			[(#REM) Menu de navigation mots-cles ]
-			#MODELE{article_mots}
-			
         </div><!-- aside -->
     </div><!-- main -->
     <div style="clear: both"></div>
