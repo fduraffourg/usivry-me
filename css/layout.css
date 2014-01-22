@@ -167,3 +167,33 @@ body {
     padding: 4px;
     text-align: center;
 }
+
+
+/******************/
+/* Mobile version */
+/******************/
+
+@media (max-width: 900px) {
+
+.page_content { width: 100%; }
+
+#logo { display: none; }
+#header_right { float: none; width: 100%; }
+
+#main .mcontent,
+#main .aside {
+    width: inherit;
+    float: none;
+}
+
+#main .aside { margin-top: 1em; }
+
+
+}
+
+@media (max-width: 600px) {
+#slogan { margin: 5px; }
+#footer_content > ul, #permaliens > ul { display: block; padding: 0px; }
+#footer_content > ul > li { display: block; width: inherit; }
+#permaliens > ul > li { display: inline-block; text-align: left; border: 0px }
+}

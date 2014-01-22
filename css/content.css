@@ -24,3 +24,12 @@ body {
 #activites .act_skirando .img {
     background: url("img/act_hiver.jpg");
 }
+
+
+/******************/
+/* Mobile version */
+/******************/
+
+@media (max-width: 900px) {
+body { background: white; }
+}
