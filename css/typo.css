@@ -6,10 +6,6 @@
 
 -------------------------------------------------------------- */
 
-html { font-size: 100.01%; } /* pour IE < 6 */
-/* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/ et http://forum.alsacreations.com/topic-4-54377-1.html */
-body { font: 1em/1.5em Georgia, Cambria, Times New Roman, Times, serif; color: #222222; }
-
 /* Titraille / Intertitres */
 h1,.h1,
 h2,.h2,
