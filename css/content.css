@@ -8,6 +8,7 @@ body {
 
 #logo {
     background: url("img/logo.png") no-repeat center center white; 
+    border-radius: 12px;
 }
 
 #activites .img {
