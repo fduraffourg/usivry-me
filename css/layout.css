@@ -154,7 +154,7 @@ body {
 
 #footer_content > ul > li > span {
     display: block;
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0px 0.5em;
     margin-bottom: 0.5em;
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 #footer .border_bottom {
-    padding: 4px;
+    padding: 0px 4px;
     text-align: center;
 }
 
