@@ -94,10 +94,11 @@ body {
 
 
 #permaliens {
+    padding: 0.4em 1em 0.4em 1em;
 }
 
 #permaliens li {
-    padding: 0.4em 1em 0.4em 1em;
+    padding-left: 5px;
 }
 
 
