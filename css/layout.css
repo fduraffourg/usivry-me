@@ -68,15 +68,16 @@ body {
 
 
 #activites {
-    text-align: right;
+    text-align: center;
 }
 
 #activites ul {
+    padding: 0px;
 }
 
 #activites ul li {
     display: inline-block;
-    margin: 0px 24px;
+    margin: 0px 45px;
 }
 
 #activites ul li .txt {
@@ -94,11 +95,13 @@ body {
 
 
 #permaliens {
-    padding: 0.4em 1em 0.4em 1em;
+    padding: 0.4em 0px;
 }
 
 #permaliens li {
-    padding-left: 5px;
+    padding: 0px;
+    width: 25%;
+    text-align: center;
 }
 
 

@@ -79,7 +79,7 @@ body {
 #permaliens li {
     border-left: 1px solid white;
 }
-#permaliens li:last-child { border-left: 0px; }
+#permaliens li:first-child { border-left: 0px; }
 
 #permaliens a {
     font-size: 1.2em;
@@ -94,7 +94,7 @@ body {
     height: 1.5em;
 }
 #permaliens input[type=text] {
-    width: 150px;
+    width: 120px;
 }
 #permaliens input[type=submit] {
     background-color: black;
