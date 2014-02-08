@@ -34,16 +34,16 @@ body {
 
 
 .bg_section {
-    background-color: #7e1713;
+    background-color: #7e1713 !important;
 }
 .bg_alpinisme {
-    background-color: #aeae00;
+    background-color: #aeae00 !important;
 }
 .bg_escalade {
-    background-color: #ff5000;
+    background-color: #ff5000 !important;
 }
 .bg_hiver {
-    background-color: #2999d9;
+    background-color: #2999d9 !important;
 }
 
 
