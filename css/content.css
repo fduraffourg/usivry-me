@@ -7,7 +7,7 @@ body {
 */
 
 #logo {
-    background: url("img/logo.png") no-repeat center center #b21a17;
+    background: url("img/logo.png") no-repeat center center white; 
 }
 
 #activites .img {

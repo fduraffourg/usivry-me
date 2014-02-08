@@ -68,13 +68,15 @@ body {
 
 
 #activites {
+    text-align: right;
 }
 
 #activites ul {
 }
 
 #activites ul li {
-    width: 25%;
+    display: inline-block;
+    margin: 0px 24px;
 }
 
 #activites ul li .txt {
