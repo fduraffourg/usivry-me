@@ -196,6 +196,7 @@ body {
 
 @media (max-width: 600px) {
 #slogan { margin: 5px; }
+#activites > ul > li { margin: 0px; width: 30%; }
 #footer_content > ul, #permaliens > ul { display: block; padding: 0px; }
 #footer_content > ul > li { display: block; width: inherit; }
 #permaliens > ul > li { display: inline-block; text-align: left; border: 0px }
