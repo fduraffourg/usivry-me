@@ -72,6 +72,8 @@ body {
     color: white;
 }
 
+#logo { border-radius: 12px; }
+
 #activites .txt {
     font-weight: bold;
 }
