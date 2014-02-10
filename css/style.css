@@ -51,14 +51,14 @@ body {
 // Header
 */
 
-.header a {
+#header a {
     color: white;
     text-decoration: none;
 }
-.header a:hover {
+#header a:hover {
     text-decoration: underline;
 }
-.header a:active {
+#header a:active {
     outline: none;
 }
 
