@@ -39,7 +39,7 @@ body {
 */
 
 .header {
-    padding: 0px 0px 40px 0px;
+    padding-bottom: 30px;
 }
 
 #logo {
@@ -110,7 +110,6 @@ body {
 */
 
 #main {
-    padding: 0.8em 0px;
 }
 
 #main .mcontent {
