@@ -33,7 +33,7 @@
 				#ANCRE_PAGINATION
 				<h2><:articles:> (#GRAND_TOTAL)</h2>
 				<ul class="spip">
-					<BOUCLE_articles(ARTICLES) {recherche} {!par date} {pagination}>
+					<BOUCLE_articles(ARTICLES) {recherche} {!par date} {pagination 30}>
 					<li><a href="#URL_ARTICLE">#TITRE</a></li>
 					</BOUCLE_articles>
 				</ul>
@@ -47,7 +47,7 @@
 				#ANCRE_PAGINATION
 				<h2><:rubriques:> (#GRAND_TOTAL)</h2>
 				<ul class="spip">
-					<BOUCLE_rubriques(RUBRIQUES) {recherche} {!par points} {pagination 5}>
+					<BOUCLE_rubriques(RUBRIQUES) {recherche} {!par points} {pagination 10}>
 					<li><a href="#URL_RUBRIQUE">#TITRE</a></li>
 					</BOUCLE_rubriques>
 				</ul>
@@ -61,13 +61,16 @@
 				#ANCRE_PAGINATION
 				<h2><:mots_clefs:> (#GRAND_TOTAL)</h2>
 				<ul class="spip">
-					<BOUCLE_mots(MOTS) {recherche} {!par points} {pagination 5}>
+					<BOUCLE_mots(MOTS) {recherche} {!par points} {pagination 20}>
 					<li><a href="#URL_MOT">#TITRE</a></li>
 					</BOUCLE_mots>
 				</ul>
 				[<p class="pagination">(#PAGINATION)</p>]
 			</div>
 			</B_mots>
+
+        <span class="to_top"><a href="#body" title="Haut de page">&uarr;</a></span>
+        </div><!-- .mcontent -->
 			
 		<div class="aside transbg">
 			<INCLURE{fond=inclure/navsub, id_rubrique} />
