@@ -34,7 +34,7 @@
 				#ANCRE_PAGINATION
 				<h2><:articles:> (#GRAND_TOTAL)</h2>
 				<ul class="spip">
-					<BOUCLE_articles(ARTICLES) {recherche} {!par points} {pagination}>
+					<BOUCLE_articles(ARTICLES) {recherche} {!par date} {pagination}>
 					<li><a href="#URL_ARTICLE">#TITRE</a></li>
 					</BOUCLE_articles>
 				</ul>
@@ -70,51 +70,6 @@
 			</div>
 			</B_mots>
 			
-			[(#REM) Breves trouvees ]
-			<B_breves>
-			<div class="menu menu_breves">
-				#ANCRE_PAGINATION
-				<h2><:breves:breves:> (#GRAND_TOTAL)</h2>
-				<ul class="spip">
-					<BOUCLE_breves(BREVES) {recherche} {!par points} {pagination 5}>
-					<li><a href="#URL_BREVE">#TITRE</a></li>
-					</BOUCLE_breves>
-				</ul>
-				[<p class="pagination">(#PAGINATION)</p>]
-			</div>
-			</B_breves>
-			
-			[(#REM) Messages trouves ]
-			<B_messages>
-			<div class="menu menu_comments">
-				#ANCRE_PAGINATION
-				<h2><:messages_forum:> (#GRAND_TOTAL)</h2>
-				<ul class="spip">
-					<BOUCLE_messages(FORUMS?) {recherche} {!par points} {pagination 5}>
-					[<li><a href="#URL_FORUM"[ title="(#TITRE|attribut_html|couper{80})"]>(#TEXTE|couper{80})</a></li>]
-					</BOUCLE_messages>
-				</ul>
-				[<p class="pagination">(#PAGINATION)</p>]
-			</div>
-			</B_messages>
-			
-			[(#REM) Sites web trouves ]
-			<B_sites>
-			<div class="menu menu_sites">
-				#ANCRE_PAGINATION
-				<h2><:sites_web:> (#GRAND_TOTAL)</h2>
-				<ul class="spip">
-					<BOUCLE_sites(SITES) {recherche} {!par points} {pagination 5}>
-					<li><a href="[(#ID_SYNDIC|generer_url_entite{site,'','',#CONNECT})]">#NOM_SITE</a></li>
-					</BOUCLE_sites>
-				</ul>
-				[<p class="pagination">(#PAGINATION)</p>]
-			</div>
-			</B_sites>
-			
-	        </div><!--mcontent-->
-	
-		
 		<div class="aside transbg">
 			<INCLURE{fond=inclure/navsub, id_rubrique} />
 		</div><!--.aside-->
