@@ -43,7 +43,8 @@ sub { vertical-align: sub; }
 /* Listes */
 ul, ol, li, dl, dt, dd {}
 ul ul, ol ol, ul ol, ol ul { margin-top: 0; margin-bottom: 0; }
-ul { padding-left: 1em; }
+ul { padding-left: 1em; margin-bottom: 1.5em; }
+li > ul { margin-bottom: 0px; }
 
 dl dt { font-weight: bold; }
 dl dd {}

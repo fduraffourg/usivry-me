@@ -4,7 +4,12 @@
 ]
 <BOUCLE_secteurs(RUBRIQUES) {racine}{id_rubrique!=1} {par titre}>
 
-<h2>#TITRE</h2>
+<h2
+[(#ID_RUBRIQUE|=={4}|?{ class="fg_alpinisme"})]
+[(#ID_RUBRIQUE|=={3}|?{ class="fg_escalade"})]
+[(#ID_RUBRIQUE|=={5}|?{ class="fg_hiver"})]
+[(#ID_RUBRIQUE|=={2}|?{ class="fg_section"})]
+><a href="#URL_RUBRIQUE">#TITRE</a></h2>
 
 [(#REM) Articles et sous-rubriques ]
 <B_articles_racine>
